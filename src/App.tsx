@@ -1,3 +1,12 @@
-export default function App(){
-  return <h1 className="text-3x1 font-bold underline"> Hello Perds</h1>
+import { BrowserRouter as Router } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+
+export default function App() {
+  return (
+    <Router>
+      <div className="flex h-screen">
+        <Sidebar />
+      </div>
+    </Router>
+  );
 }
